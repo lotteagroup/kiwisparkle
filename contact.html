@@ -40,7 +40,7 @@
         </div>
         <div class="detail-card contact-card">
           <h2>Send a message</h2>
-          <form>
+          <form id="contact-form">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your name" required />
             <label for="email">Email</label>
@@ -48,6 +48,7 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
             <button type="submit" class="button button-primary">Send Message</button>
+            <p id="contact-message" class="form-message"></p>
           </form>
         </div>
       </div>
@@ -59,5 +60,6 @@
       <p><a href="booking.html">Book Service</a></p>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
