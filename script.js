@@ -1,4 +1,5 @@
-const RECIPIENT_EMAIL = 'lotteagroup@outlook.co.nz';
+const BOOKING_RECIPIENT_EMAIL = 'lotteagroup@outlook.co.nz';
+const CONTACT_RECIPIENT_EMAIL = 'info@kiwisparkle.co.nz';
 
 function buildMailtoLink(recipient, subject, bodyLines) {
   const body = bodyLines.join('\n');
@@ -28,7 +29,7 @@ if (bookingForm) {
     const serviceNotes = bookingForm.serviceNotes.value.trim();
 
     const mailtoLink = buildMailtoLink(
-      RECIPIENT_EMAIL,
+      BOOKING_RECIPIENT_EMAIL,
       `New Booking Request - ${serviceType} for ${name}`,
       [
         `Name: ${name}`,
@@ -67,7 +68,7 @@ if (contactForm) {
     const message = contactForm.message.value.trim();
 
     const mailtoLink = buildMailtoLink(
-      RECIPIENT_EMAIL,
+      CONTACT_RECIPIENT_EMAIL,
       `Website Contact Form - ${name}`,
       [`Name: ${name}`, `Email: ${email}`, '', 'Message:', message]
     );
