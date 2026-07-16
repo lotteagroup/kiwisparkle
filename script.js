@@ -1,4 +1,4 @@
-const BOOKING_RECIPIENT_EMAIL = 'lotteagroup@outlook.co.nz';
+const BOOKING_RECIPIENT_EMAIL = 'info@kiwisparkle.co.nz';
 const CONTACT_RECIPIENT_EMAIL = 'info@kiwisparkle.co.nz';
 
 function buildMailtoLink(recipient, subject, bodyLines) {
